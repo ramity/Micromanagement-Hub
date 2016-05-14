@@ -41,11 +41,21 @@ input.loginformsubmit
   border:1px solid #2980b9;
   background-color:#fff;
   color:#2980b9;
+  cursor:pointer;
 }
-div.registerinf
+div.logininf
 {
   width:930px;
   padding:15px;
   background-color:#fff;
+  margin-bottom:15px;
+}
+div.errorinf
+{
+  width:930px;
+  padding:15px;
+  background-color:#e74c3c;
+  color:#fff;
+  border-bottom:5px solid #c0392b;
   margin-bottom:15px;
 }
