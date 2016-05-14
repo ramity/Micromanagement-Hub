@@ -14,7 +14,7 @@
           <div class="loginformlabel">Username</div>
           <input type="text" class="loginformtext" placeholder="Username" name="login_username" autocomplete="off">
           <div class="loginformlabel">Password</div>
-          <input type="text" class="loginformtext" placeholder="Password" name="login_password">
+          <input type="password" class="loginformtext" placeholder="Password" name="login_password">
           <input type="submit" class="loginformsubmit" value="Login" name="login_submit">
         </form>
       </div>
