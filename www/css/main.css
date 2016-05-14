@@ -16,7 +16,15 @@ body
   margin:0px;
   background-color:#ecf0f1;
 }
-div#leftsidebar
+form,input
+{
+  margin:0px;
+  padding:0px;
+  float:left;
+  outline:none;
+  border:none;
+}
+div#lsidebar
 {
   width:240px;
   height:100%;
@@ -28,7 +36,7 @@ div#leftsidebar
   line-height:60px;
   font-size:14px;
 }
-div.leftsidebaritem,div.leftsidebaritemactive
+div.lsidebaritem,div.lsidebaritemactive
 {
   width:240px;
   height:60px;
@@ -36,11 +44,11 @@ div.leftsidebaritem,div.leftsidebaritemactive
   text-indent:15px;
   font-size:14px;
 }
-div.leftsidebaritem:hover,div.leftsidebaritemactive
+div.lsidebaritem:hover,div.lsidebaritemactive
 {
   background-color:#2c3e50;
 }
-div#rightsidebar
+div#rsidebar
 {
   width:240px;
   height:100%;
@@ -52,7 +60,7 @@ div#rightsidebar
   line-height:60px;
   font-size:14px;
 }
-div.rightsidebaritem,div.rightsidebaritemactive
+div.rsidebaritem,div.rsidebaritemactive
 {
   width:240px;
   height:60px;
@@ -60,13 +68,13 @@ div.rightsidebaritem,div.rightsidebaritemactive
   text-indent:15px;
   font-size:14px;
 }
-div.rightsidebaritem:hover,div.rightsidebaritemactive
+div.rsidebaritem:hover,div.rsidebaritemactive
 {
   background-color:#2c3e50;
 }
-@media all and (max-width: 1360px)
+@media all and (max-width: 1474px)
 {
-  div#leftsidebar,div#rightsidebar
+  div#lsidebar,div#rsidebar
   {
     display:none;
   }

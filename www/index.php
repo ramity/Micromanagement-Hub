@@ -5,54 +5,11 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <div id="leftsidebar">
-      <div class="leftsidebaritem"></div>
-      <a href="">
-        <div class="leftsidebaritem">Dashboard</div>
-      </a>
-      <a href="">
-        <div class="leftsidebaritem">Social Hub</div>
-      </a>
-      <a href="">
-        <div class="leftsidebaritem">Food Tracker</div>
-      </a>
-      <a href="">
-        <div class="leftsidebaritem">Schedule Planner</div>
-      </a>
-      <a href="">
-        <div class="leftsidebaritem">Closet Inventory</div>
-      </a>
-    </div>
-    <div id="rightsidebar">
-      <a href="">
-        <div class="rightsidebaritem"></div>
-      </a>
-      <a href="">
-        <div class="rightsidebaritem"></div>
-      </a>
-      <a href="">
-        <div class="rightsidebaritem"></div>
-      </a>
-      <a href="">
-        <div class="rightsidebaritem"></div>
-      </a>
-    </div>
-    <div id="top">
-      <a href="http://localhost/">
-        <div id="toplogo">Ramity</div>
-      </a>
-      <div id="toplogin">
-        <a href="http://localhost/register.php">
-          <div class="toploginbutton">Register</div>
-        </a>
-        <a href="http://localhost/login.php">
-          <div class="toploginbutton">Login</div>
-        </a>
-      </div>
-    </div>
+    <?php require_once('D:/wamp/www/req/parts/bars.php')?>
     <div id="container">
       <div id="containerinr">
-        <div class="containerheader">Development plan</div>
+        <div class="containerheader">"A new kind of web application to help you manage anything." - Lewis Brown</div>
+        Follow development <a style="text-decoration:underline" href="https://github.com/ramity/Micromanagement-Hub">here</a>.
       </div>
     </div>
   </body>
