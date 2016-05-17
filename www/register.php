@@ -83,8 +83,9 @@ if(isset($_POST['register_submit'])&&!empty($_POST['register_submit']))
         $state->bindValue(':username',$username);
         $state->bindValue(':password',password_hash($password,PASSWORD_BCRYPT));
         $state->bindValue(':ip',$_SERVER['REMOTE_ADDR']);
-        $state->bindValue(':date_created',date("Y-m-d H:i:s"));
-        $state->bindValue(':last_active',date("Y-m-d H:i:s"));
+        $state->bindValue(':date_created',date("m/d/Y_H:i:s:u"));
+        //save token to be generated at login
+        $state->bindValue(':last_active',date("m/d/Y_H:i:s:u"));
         $check_b=$state->execute();
 
         $con->commit();
