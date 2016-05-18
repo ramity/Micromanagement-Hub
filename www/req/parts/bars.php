@@ -34,12 +34,28 @@
   <a href="http://localhost/">
     <div id="toplogo">Ramity</div>
   </a>
-  <div id="toplogin">
-    <a href="http://localhost/register.php">
-      <div class="toploginbutton">Register</div>
-    </a>
-    <a href="http://localhost/login.php">
-      <div class="toploginbutton">Login</div>
-    </a>
-  </div>
+  <?php
+  if(isset($secure['login'])&&isset($secure['username'])&&$secure['login'])
+  {
+    echo '<div id="toplogin">';
+    echo '<a href="http://localhost/logout">';
+      echo '<div class="toploginbutton">logout</div>';
+    echo '</a>';
+      echo '<a href="http://localhost/">';
+        echo '<div class="toploginbutton">'.$secure['username'].'</div>';
+      echo '</a>';
+    echo '</div>';
+  }
+  else
+  {
+    echo '<div id="toplogin">';
+      echo '<a href="http://localhost/register">';
+        echo '<div class="toploginbutton">Register</div>';
+      echo '</a>';
+      echo '<a href="http://localhost/login">';
+        echo '<div class="toploginbutton">Login</div>';
+      echo '</a>';
+    echo '</div>';
+  }
+  ?>
 </div>

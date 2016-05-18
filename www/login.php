@@ -1,7 +1,7 @@
 <?php
 require_once('D:/wamp/www/req/pass.php');
 require_once('D:/wamp/www/req/modules/auth.php');
-require_once('D:/wamp/www/req/modules/require_secure_false');
+require_once('D:/wamp/www/req/modules/require_secure_false.php');
 
 $min_username_length=3;
 $max_username_length=20;
@@ -91,7 +91,7 @@ if(isset($_POST['login_submit'])&&!empty($_POST['login_submit']))
     <?php require_once('D:/wamp/www/req/parts/bars.php')?>
     <div id="container">
       <div id="containerinr">
-        <form action="http://localhost/login.php" method="post" class="login">
+        <form action="http://localhost/login" method="post" class="login">
           <div class="loginheader">Login</div>
           <div class="loginformlabel">Username</div>
           <input type="text" class="loginformtext" placeholder="Username" name="login_username" autocomplete="off">

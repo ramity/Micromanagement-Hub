@@ -30,7 +30,6 @@ if(isset($_COOKIE['AUTH'])&&!empty($_COOKIE['AUTH']))
       else
       {
         //kill cookie
-        echo '2';
         unset($_COOKIE['AUTH']);
         setcookie('AUTH','',time()-3600,'','localhost',false,true);
       }
@@ -38,7 +37,6 @@ if(isset($_COOKIE['AUTH'])&&!empty($_COOKIE['AUTH']))
     else
     {
       //kill cookie
-      echo '1';
       unset($_COOKIE['AUTH']);
       setcookie('AUTH','',time()-3600,'','localhost',false,true);
     }
