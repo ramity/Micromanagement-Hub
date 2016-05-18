@@ -1,5 +1,7 @@
 <?php
 require_once('D:/wamp/www/req/pass.php');
+require_once('D:/wamp/www/req/modules/auth.php');
+require_once('D:/wamp/www/req/modules/require_secure_false');
 
 $min_username_length=3;
 $max_username_length=20;
@@ -42,6 +44,7 @@ if(isset($_POST['login_submit'])&&!empty($_POST['login_submit']))
       $con->setAttribute(PDO::ATTR_EMULATE_PREPARES,false);
       $state=$con->prepare('SELECT id,password FROM users WHERE username=:username');
       $state->bindValue(':username',$username);
+      $state->execute();
       $values=$state->fetchAll();
 
       if(empty($values))
@@ -59,7 +62,7 @@ if(isset($_POST['login_submit'])&&!empty($_POST['login_submit']))
           $result=$state->execute();
           if($result)
           {
-            setcookie('AUTH',$values[0]['id'].'+'.password_hash($token,PASSWORD_BCRYPT),time()+(60*60*24*31),'','localhost',false,true);
+            setcookie('AUTH',$values[0]['id'].'+'.password_hash($token,PASSWORD_BCRYPT),time()+(60*60*24*7),'','localhost',false,true);
             header('Location:http://localhost/');
           }
         }

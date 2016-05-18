@@ -1,5 +1,7 @@
 <?php
 require_once('D:/wamp/www/req/pass.php');
+require_once('D:/wamp/www/req/modules/auth.php');
+require_once('D:/wamp/www/req/modules/require_secure_false');
 
 $min_username_length=3;
 $max_username_length=20;

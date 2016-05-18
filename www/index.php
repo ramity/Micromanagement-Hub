@@ -1,3 +1,4 @@
+<?php require_once('D:/wamp/www/req/modules/auth.php');?>
 <!DOCTYPE html>
   <head>
     <title>Ramity Hub</title>
