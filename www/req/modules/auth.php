@@ -31,14 +31,14 @@ if(isset($_COOKIE['AUTH'])&&!empty($_COOKIE['AUTH']))
       {
         //kill cookie
         unset($_COOKIE['AUTH']);
-        setcookie('AUTH','',time()-3600,'','localhost',false,true);
+        setcookie('AUTH','',time()-3600,'/','',false,true);
       }
     }
     else
     {
       //kill cookie
       unset($_COOKIE['AUTH']);
-      setcookie('AUTH','',time()-3600,'','localhost',false,true);
+      setcookie('AUTH','',time()-3600,'/','',false,true);
     }
   }
   catch(PDOException $e)
@@ -57,7 +57,7 @@ if($secure['login'])
   $result=$state->execute();
   if($result)
   {
-    setcookie('AUTH',$values[0]['id'].'+'.password_hash($token,PASSWORD_BCRYPT),time()+(60*60*24*7),'','localhost',false,true);
+    setcookie('AUTH',$values[0]['id'].'+'.password_hash($token,PASSWORD_BCRYPT),time()+(60*60*24*7),'/','',false,true);
   }
 }
 ?>

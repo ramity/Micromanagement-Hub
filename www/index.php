@@ -6,7 +6,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <?php require_once('D:/wamp/www/req/parts/bars.php')?>
+    <?php require_once('D:/wamp/www/req/parts/mainui.php')?>
     <div id="container">
       <div id="containerinr">
         <div class="containerheader">"A new kind of web application to help you manage anything." - Lewis Brown</div>

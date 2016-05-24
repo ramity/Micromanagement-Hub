@@ -1,0 +1,39 @@
+div.displayheader
+{
+  width:930px;
+  background-color:#fff;
+  padding:15px;
+  margin-bottom:15px;
+}
+div.displayitem
+{
+  width:960px;
+  margin-bottom:15px;
+}
+div.displayitemheader
+{
+  width:930px;
+  padding:15px;
+  color:#fff;
+  background-color:#2a84bf;
+}
+table.foodlog
+{
+  width:960px;
+  padding:0px;
+  margin:0px;
+  background-color:#fff;
+  border-spacing:0px;
+  border-collapse:collapse;
+}
+table.foodlog th
+{
+  padding:5px 15px;
+  border:1px solid #bdc3c7;
+}
+table.foodlog td
+{
+  padding:5px 15px;
+  border:1px solid #bdc3c7;
+  text-align:center;
+}

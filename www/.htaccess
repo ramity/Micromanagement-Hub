@@ -1,6 +1,9 @@
 <IfModule mod_rewrite.c>
+
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
+
+# Removes file extension
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
-# End of Apache Rewrite Rules
+
 </IfModule>

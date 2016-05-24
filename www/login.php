@@ -62,7 +62,7 @@ if(isset($_POST['login_submit'])&&!empty($_POST['login_submit']))
           $result=$state->execute();
           if($result)
           {
-            setcookie('AUTH',$values[0]['id'].'+'.password_hash($token,PASSWORD_BCRYPT),time()+(60*60*24*7),'','localhost',false,true);
+            setcookie('AUTH',$values[0]['id'].'+'.password_hash($token,PASSWORD_BCRYPT),time()+(60*60*24*7),'/','',false,true);
             header('Location:http://localhost/');
           }
         }
@@ -88,7 +88,7 @@ if(isset($_POST['login_submit'])&&!empty($_POST['login_submit']))
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <?php require_once('D:/wamp/www/req/parts/bars.php')?>
+    <?php require_once('D:/wamp/www/req/parts/mainui.php')?>
     <div id="container">
       <div id="containerinr">
         <form action="http://localhost/login" method="post" class="login">

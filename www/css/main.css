@@ -44,9 +44,17 @@ div.lsidebaritem,div.lsidebaritemactive
   text-indent:15px;
   font-size:14px;
 }
-div.lsidebaritem:hover,div.lsidebaritemactive
+div.lsidebaritem:hover,div.lsidebaritemactive,div.lsidebarsubitem:hover
 {
   background-color:#2c3e50;
+}
+div.lsidebarsubitem
+{
+  width:240px;
+  height:60px;
+  cursor:pointer;
+  text-indent:30px;
+  font-size:14px;
 }
 div#rsidebar
 {
