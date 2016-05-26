@@ -29,6 +29,45 @@
   {
     if(isset($sub_application_selected)&&!empty($sub_application_selected)&&$sub_application_selected==$sub_application['name'])
     {
+      if($sub_application_selected=='Food Tracker')
+      {
+        $l_nav_array=
+        [
+          [
+            'name'=>'Planner',
+            'url'=>'http://localhost/food/planner/dashboard',
+          ],
+          [
+            'name'=>'Inventory',
+            'url'=>'http://localhost/food/inventory/dashboard',
+          ],
+          [
+            'name'=>'Log',
+            'url'=>'http://localhost/food/log/dashboard',
+          ],
+          [
+            'name'=>'Profile',
+            'url'=>'http://localhost/food/profile/dashboard',
+          ],
+          [
+            'name'=>'Recipes',
+            'url'=>'http://localhost/food/recipes/dashboard',
+          ],
+          [
+            'name'=>'Foods',
+            'url'=>'http://localhost/food/foods/dashboard',
+          ],
+          [
+            'name'=>'Meals',
+            'url'=>'http://localhost/food/meals/dashboard',
+          ],
+          [
+            'name'=>'Meal Plans',
+            'url'=>'http://localhost/food/mealplans/dashboard',
+          ],
+        ];
+      }
+
       echo '<a href="'.$sub_application['url'].'">';
         echo '<div class="lsidebaritemactive">';
           echo $sub_application['name'];
@@ -39,8 +78,15 @@
       {
         foreach($l_nav_array as $l_nav_item)
         {
-          echo '<a href="">';
-            echo '<div class="lsidebarsubitem">asdfasdf</div>';
+          echo '<a href="'.$l_nav_item['url'].'">';
+            if(isset($l_nav_item_selected)&&$l_nav_item_selected==$l_nav_item['name'])
+            {
+              echo '<div class="lsidebarsubitemactive">'.$l_nav_item['name'].'</div>';
+            }
+            else
+            {
+              echo '<div class="lsidebarsubitem">'.$l_nav_item['name'].'</div>';
+            }
           echo '</a>';
         }
       }

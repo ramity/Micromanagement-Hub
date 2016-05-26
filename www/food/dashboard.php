@@ -9,41 +9,6 @@
   <body>
     <?php
     $sub_application_selected='Food Tracker';
-    $l_nav_array=
-    [
-      [
-        'name'=>'Planner',
-        'url'=>'http://localhost/food/planner/dashboard',
-      ],
-      [
-        'name'=>'Inventory',
-        'url'=>'http://localhost/food/inventory/dashboard',
-      ],
-      [
-        'name'=>'Log',
-        'url'=>'http://localhost/food/log/dashboard',
-      ],
-      [
-        'name'=>'Profile',
-        'url'=>'http://localhost/food/profile/dashboard',
-      ],
-      [
-        'name'=>'Recipes',
-        'url'=>'http://localhost/food/recipes/dashboard',
-      ],
-      [
-        'name'=>'Foods',
-        'url'=>'http://localhost/food/foods/dashboard',
-      ],
-      [
-        'name'=>'Meals',
-        'url'=>'http://localhost/food/meals/dashboard',
-      ],
-      [
-        'name'=>'Meal Plans',
-        'url'=>'http://localhost/food/mealplans/dashboard',
-      ],
-    ];
     require_once('D:/wamp/www/req/parts/mainui.php');
     ?>
     <div id="container">
